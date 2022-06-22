@@ -12,4 +12,5 @@ import java.util.List;
 public interface CandidateRepository extends MongoRepository<Candidate,Long> {
 
     List<Candidate> findCandidateByStatus(String status);
+    Long countByStatusEquals(String Status);
 }
